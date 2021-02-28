@@ -1,0 +1,48 @@
+@import "variables";
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 60px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: $text-color-light;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 52px;
+  background-color: $text-color-dark;
+  border-radius: 100px;
+  margin: 0 auto;
+  box-shadow: 0 19px 34px 0 rgba(51, 51, 51, 0.25);
+}
+
+.btn-blue {
+  background: rgb(108,50,237);
+  background: linear-gradient(240deg, rgba(108,50,237,1) 0%, rgba(98,54,255,1) 45%, rgba(63,0,255,1) 100%);
+}
+
+.btn-white {
+  background: #fff;
+  background: $text-color-dark;
+}
+
+.slogan {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h2.title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+}

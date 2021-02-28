@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Open+Sans&display=swap');
+
+@import "normalize";
+@import "variables";
+@import "helpers";
+
+
+html {
+  color: $text-color-dark;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abhaya Libre', serif;
+}

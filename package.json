@@ -1,0 +1,23 @@
+{
+  "name": "daria-abrmowicz",
+  "version": "1.0.0",
+  "description": "Daria Abramowicz Website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasniowski/da.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wasniowski/da/issues"
+  },
+  "homepage": "https://github.com/wasniowski/da#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss css/style.css",
+    "serve": "browser-sync start --server --files 'index.html' 'css/*.css'"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "browser-sync": "^2.26.14"
+  }
+}
