@@ -1,48 +1,127 @@
 @import "variables";
 
-.align-center {
-  text-align: center;
+.text-center {text-align: center}
+
+.main-title {
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 59px;
 }
 
-.align-right {
-  text-align: right;
+.title {
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 105%;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0 60px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: $text-color-light;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 52px;
-  background-color: $text-color-dark;
-  border-radius: 100px;
-  margin: 0 auto;
-  box-shadow: 0 19px 34px 0 rgba(51, 51, 51, 0.25);
-}
-
-.btn-blue {
-  background: rgb(108,50,237);
-  background: linear-gradient(240deg, rgba(108,50,237,1) 0%, rgba(98,54,255,1) 45%, rgba(63,0,255,1) 100%);
-}
-
-.btn-white {
-  background: #fff;
-  background: $text-color-dark;
-}
-
-.slogan {
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-}
-
-h2.title {
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 900;
+}
+
+.headline {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.lead {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dotted-link {
+  text-decoration: none;
+  color: $text-color-dark;
+  position: relative;
+  padding-left: 22px;
+  z-index: 1;
+
+  span {
+    position: relative;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      top: -13px;
+      left: -22px;
+      background: $yellow;
+      border-radius: 50px;
+      z-index: -1;
+    }
+  }
+
+  &.center {
+    padding: 0;
+    span:before {
+      left: calc(50% - 22px);
+    }
+  }
+
+  &.green {
+    span:before {
+      background: $turquoise-light;
+    }
+  }
+}
+
+.more {
+  color: $orange;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    top: 0;
+    right: -25px;
+    background: url("../images/arrow.svg") right center no-repeat;
+  }
+}
+
+.more-grey {
+  color: $grey-light;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 37px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    top: 2px;
+    right: -25px;
+    background: url("../images/arrow-2.svg") right center no-repeat;
+  }
 }
