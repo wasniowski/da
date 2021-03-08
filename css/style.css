@@ -694,7 +694,7 @@ h6 {
   color: #29302B;
   margin-left: 42px;
   font-weight: 600;
-  transition: all 0.7s;
+  transition: color 0.7s;
 }
 #navigation nav a:hover {
   color: #13A895;
