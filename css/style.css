@@ -669,6 +669,13 @@ h6 {
   margin: 0 auto;
 }
 
+#navigation {
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 #navigation .container {
   display: flex;
   align-items: center;
@@ -1006,6 +1013,7 @@ h6 {
   margin-bottom: 80px;
 }
 #blog .container .collection .item {
+  box-shadow: 0 0 0 0 #0FCBB3;
   transition: all 0.7s;
 }
 #blog .container .collection .item:hover {

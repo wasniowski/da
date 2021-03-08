@@ -30,6 +30,12 @@ h6 {
 }
 
 #navigation {
+  background: $white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   .container {
     display: flex;
     align-items: center;
