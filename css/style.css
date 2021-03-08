@@ -863,9 +863,6 @@ h6 {
 #cooperation .collection .item .text .lead {
   margin-bottom: 28px;
 }
-#cooperation .text-center {
-  padding-top: 20px;
-}
 
 #da {
   position: relative;
@@ -976,7 +973,7 @@ h6 {
 
 #blog {
   background: #F8F5F2;
-  padding: 120px 0;
+  padding: 120px 0 80px 0;
 }
 #blog .container h2 {
   text-align: center;
@@ -987,6 +984,7 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin-bottom: 80px;
 }
 #blog .container .collection .item:hover {
   box-shadow: 10px 10px 0 0 #0FCBB3;
