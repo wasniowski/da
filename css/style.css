@@ -586,7 +586,7 @@ p {
   background: #F4C201;
   border-radius: 50px;
   z-index: -1;
-  transition: all 1.3s;
+  transition: all 0.7s;
 }
 .dotted-link:hover span:before {
   width: 200%;
