@@ -600,7 +600,7 @@ p {
   width: 100%;
 }
 .dotted-link.green span:before {
-  background: #0FCBB3;
+  background: #57DBCA;
 }
 
 .more {
@@ -687,6 +687,10 @@ h6 {
   color: #29302B;
   margin-left: 42px;
   font-weight: 600;
+  transition: all 0.7s;
+}
+#navigation nav a:hover {
+  color: #13A895;
 }
 
 #top {
@@ -854,6 +858,10 @@ h6 {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
+#cooperation .collection .item {
+  box-shadow: 0 0 0 0 #F9A01B;
+  transition: all 0.7s;
+}
 #cooperation .collection .item:hover {
   box-shadow: 10px 10px 0 0 #F9A01B;
 }
@@ -996,6 +1004,9 @@ h6 {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin-bottom: 80px;
+}
+#blog .container .collection .item {
+  transition: all 0.7s;
 }
 #blog .container .collection .item:hover {
   box-shadow: 10px 10px 0 0 #0FCBB3;
