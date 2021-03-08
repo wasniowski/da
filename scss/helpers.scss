@@ -41,38 +41,56 @@ p {
 }
 
 .dotted-link {
+  display: inline-block;
   text-decoration: none;
   color: $text-color-dark;
   position: relative;
-  padding-left: 22px;
   z-index: 1;
+  overflow: hidden;
+  border-radius: 50px;
 
   span {
     position: relative;
+    padding:0 22px;
     font-size: 12px;
-    line-height: 26px;
+    line-height: 44px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 
     &:before {
-      display: block;
+      display: inline-block;
       content: "";
       position: absolute;
-      width: 44px;
+      width: 100%;
       height: 44px;
       top: -13px;
-      left: -22px;
+      left: calc(-100% + 44px);
+      right: auto;
       background: $yellow;
       border-radius: 50px;
       z-index: -1;
+      transition: all 1.3s;
+    }
+  }
+
+  &:hover {
+    span:before {
+      transform: translate(calc(200% - 88px));
     }
   }
 
   &.center {
-    padding: 0;
     span:before {
-      left: calc(50% - 22px);
+      width: 44px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &:hover {
+      span:before {
+        width: 300%;
+        transform: translate(calc(17% - 44px));
+      }
     }
   }
 

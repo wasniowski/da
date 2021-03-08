@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Open+Sans:wght@400;600;700&display=swap");
 
 @import "normalize";
 @import "variables";
@@ -49,6 +49,7 @@ h6 {
       text-decoration: none;
       color: $text-color-dark;
       margin-left: 42px;
+      font-weight: 600;
     }
   }
 }
@@ -437,7 +438,7 @@ h6 {
             line-height: 26px;
             letter-spacing: 0.1em;
             color: $grey;
-            font-weight: 600;
+            font-weight: 700;
           }
 
           h3 {
