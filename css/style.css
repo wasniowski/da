@@ -589,7 +589,7 @@ p {
   transition: all 1.3s;
 }
 .dotted-link:hover span:before {
-  transform: translate(calc(200% - 88px));
+  width: 200%;
 }
 .dotted-link.center span:before {
   width: 44px;
@@ -597,8 +597,7 @@ p {
   transform: translate(-50%);
 }
 .dotted-link.center:hover span:before {
-  width: 300%;
-  transform: translate(calc(17% - 44px));
+  width: 100%;
 }
 .dotted-link.green span:before {
   background: #0FCBB3;

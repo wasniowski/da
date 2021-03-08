@@ -76,7 +76,7 @@ p {
 
   &:hover {
     span:before {
-      transform: translate(calc(200% - 88px));
+      width: 200%;
     }
   }
 
@@ -88,8 +88,7 @@ p {
     }
     &:hover {
       span:before {
-        width: 300%;
-        transform: translate(calc(17% - 44px));
+        width: 100%;
       }
     }
   }
