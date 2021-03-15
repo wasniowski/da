@@ -71,7 +71,7 @@
           var sliderCooperationOptions = {
             pager: false,
             maxSlides: 4,
-            slideWidth: 295,
+            slideWidth: 260,
             moveSlides: 1,
             controls: false,
             adaptiveHeight: true,
@@ -105,7 +105,7 @@
           var sliderBlogOptions = {
             pager: false,
             maxSlides: 4,
-            slideWidth: 295,
+            slideWidth: 260,
             moveSlides: 1,
             controls: false,
             adaptiveHeight: true,
