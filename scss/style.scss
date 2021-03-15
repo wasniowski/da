@@ -5,6 +5,8 @@
 @import "variables";
 @import "helpers";
 
+@import "abooutme";
+
 html {
   color: $text-color-dark;
   font-size: 1em;
@@ -23,6 +25,32 @@ h6 {
   text-rendering: geometricPrecision;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 13px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+      background: $dark;
+    }
+  }
 }
 
 #navigation {
@@ -106,7 +134,8 @@ h6 {
         color: $text-color-dark;
       }
 
-      &:hover {
+      &:hover,
+      &.active {
         color: $orange;
 
         @include breakpoint(small) {
@@ -1023,6 +1052,6 @@ h6 {
 
 @include breakpoint(large) {
   .container {
-    width: 1140px;
+    width: 1200px;
   }
 }
