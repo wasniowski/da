@@ -3,8 +3,30 @@
     init: function () {
       // Enable Sliders
       enableSliders.init();
+
+      // Enable Navigation
+      navigation.init();
     },
   };
+
+  /*
+   * Navigation
+   */
+
+  var navigation = {
+    navSelector: '#navigation',
+    openNavSelector: 'button.open',
+    closeNavSelector: 'button.close',
+
+    init: function () {
+      $(this.openNavSelector).click(() => {
+        $(this.navSelector).addClass('open');
+      })
+      $(this.closeNavSelector).click(() => {
+        $(this.navSelector).removeClass('open');
+      })
+    }
+  }
 
   /*
    * Enable Sliders
