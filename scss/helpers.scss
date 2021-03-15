@@ -6,16 +6,22 @@
   font-family: "Abhaya Libre", serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 59px;
+  font-size: 54px;
+  line-height: 95%;
+  @include breakpoint(medium) {
+    font-size: 64px;
+  }
 }
 
 .title {
   font-family: "Abhaya Libre", serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 105%;
+  @include breakpoint(medium) {
+    font-size: 48px;
+  }
 }
 
 p {
@@ -122,6 +128,7 @@ p {
 }
 
 .more-grey {
+  display: inline-block;
   color: $grey-light;
   text-decoration: none;
   font-weight: bold;
@@ -137,8 +144,14 @@ p {
     position: absolute;
     width: 25px;
     height: 16px;
-    top: 2px;
+    top: 10px;
     right: -25px;
     background: url("../images/arrow-2.svg") right center no-repeat;
   }
+}
+
+.bx-wrapper {
+  background: none;
+  border: 0;
+  box-shadow: none;
 }

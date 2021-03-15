@@ -9,6 +9,10 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -141,7 +145,7 @@
       <div class="container">
         <h2 class="title">Jak nasza współpraca może wyglądać?</h2>
 
-        <div class="collection">
+        <div class="collection js-slider-cooperation">
           <div class="item">
             <div class="image">
               <img src="images/spotkania-ico.svg" />
@@ -252,20 +256,22 @@
           <img src="http://via.placeholder.com/200x200" />
         </div>
         <div class="numbers">
-          <div class="item">
-            <span>+20</span>
-            <p>lat doświadczenia w sporcie</p>
-          </div>
-          <div class="item">
-            <span>+10</span>
-            <p>lat pracy jako trenera</p>
-          </div>
-          <div class="item">
-            <span>+5</span>
-            <p>
-              lat prowadzenia edukacji społecznej w zakresie psychologii w
-              sporcie
-            </p>
+          <div class="collection">
+            <div class="item">
+              <span>+20</span>
+              <p>lat doświadczenia w sporcie</p>
+            </div>
+            <div class="item">
+              <span>+10</span>
+              <p>lat pracy jako trenera</p>
+            </div>
+            <div class="item">
+              <span>+5</span>
+              <p>
+                lat prowadzenia edukacji społecznej w zakresie psychologii w
+                sporcie
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -285,12 +291,12 @@
             się o wykorzystywanie własnego potencjału. Między innymi o tym, jak
             ten potencjał rozwijać opowiadam w moim podcaście.
           </p>
-          <div class="links">
-            <p>Posłuchaj:</p>
-            <a href="#"><img src="images/apple-podcast-icon.svg" /></a>
-            <a href="#"><img src="images/spotify-icon.svg" /></a>
-            <a href="#"><img src="images/vh-icon.svg" /></a>
-          </div>
+        </div>
+        <div class="links">
+          <p>Posłuchaj:</p>
+          <a href="#"><img src="images/apple-podcast-icon.svg" /></a>
+          <a href="#"><img src="images/spotify-icon.svg" /></a>
+          <a href="#"><img src="images/vh-icon.svg" /></a>
         </div>
       </div>
     </section>
@@ -299,19 +305,14 @@
       <div class="container">
         <h2 class="title">Blog</h2>
 
-        <div class="collection">
+        <div class="collection js-slider-blog">
           <div class="item">
             <div class="image">
               <img src="http://via.placeholder.com/400x350" />
             </div>
             <div class="text">
               <span>17.02.21</span>
-              <h3>Tytuł wpisu</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis
-                magna id aliquet lorem amet, bibendum lorem rutrum. Et arcu
-                habitasse volutpat eget commodo. Sed turpis facilisis.
-              </p>
+              <h3>Jak zadbać o zdrowie psychiczne w czasie COVID-19?</h3>
             </div>
           </div>
 
@@ -321,12 +322,7 @@
             </div>
             <div class="text">
               <span>17.02.21</span>
-              <h3>Tytuł wpisu</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis
-                magna id aliquet lorem amet, bibendum lorem rutrum. Et arcu
-                habitasse volutpat eget commodo. Sed turpis facilisis.
-              </p>
+              <h3>Międzynarodowy Dzień Walki z Depresją i zmieniający się sport</h3>
             </div>
           </div>
 
@@ -336,20 +332,15 @@
             </div>
             <div class="text">
               <span>17.02.21</span>
-              <h3>Tytuł wpisu</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis
-                magna id aliquet lorem amet, bibendum lorem rutrum. Et arcu
-                habitasse volutpat eget commodo. Sed turpis facilisis.
-              </p>
+              <h3>Dlaczego kontuzja często bywa dla sportowca tak trudnym doświadczeniem i czy może być źródłem siły?</h3>
             </div>
           </div>
         </div>
 
         <div class="text-center">
-          <a href="#" class="dotted-link center green"
-          ><span>Czytaj więcej</span></a
-          >
+          <a href="#" class="dotted-link center green">
+            <span>Czytaj więcej</span>
+          </a>
         </div>
       </div>
     </section>
@@ -377,8 +368,7 @@
             </div>
           </form>
         </div>
-      </div>
-      <div class="container">
+        <div class="separator"></div>
         <div class="social">
           <a href="#"><img src="images/social-instagram.svg" /></a>
           <a href="#"><img src="images/social-facebook.svg" /></a>
@@ -394,5 +384,13 @@
         </div>
       </div>
     </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
