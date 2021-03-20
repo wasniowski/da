@@ -112,6 +112,12 @@ p {
       background: $turquoise-btn;
     }
   }
+
+  &.dark-green {
+    span:before {
+      background: $turquoise-light;
+    }
+  }
 }
 
 .more {

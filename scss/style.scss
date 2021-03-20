@@ -4,8 +4,10 @@
 @import "normalize";
 @import "variables";
 @import "helpers";
+@import "page-helpers";
 
 @import "abooutme";
+@import "cooperation";
 
 html {
   color: $text-color-dark;
