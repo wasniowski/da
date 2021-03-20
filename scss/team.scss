@@ -1,0 +1,73 @@
+@import "breakpoints";
+@import "variables";
+
+#page-team {
+  .page-title {
+    background: $beige;
+    padding: 80px 0 140px 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-row-gap: 40px;
+      @include breakpoint(medium) {
+        grid-template-columns: 1fr 2fr;
+        max-width: 1120px;
+      }
+    }
+  }
+
+  .people {
+    background: $dark;
+    color: $white;
+    padding: 80px 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 40px;
+
+      @include breakpoint(medium) {
+        margin-top: -140px;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1120px;
+      }
+
+      .item {
+        .image {
+          img{
+          width: 100%; height: auto;
+          }
+        }
+
+        h2 {
+          text-align: center;
+          margin: 40px 60px 20px 60px;
+          font-family: "Abhaya Libre", serif;
+          font-size: 40px;
+          line-height: 40px;
+        }
+
+        p{
+          font-size: 12px;
+          line-height: 26px;
+          color: $grey-light;
+          text-align: center;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .hiring {
+    padding: 120px 0;
+
+    .container {
+      text-align: center;
+      @include breakpoint(medium) {
+        max-width: 960px;
+      }
+    }
+  }
+}

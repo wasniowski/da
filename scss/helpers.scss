@@ -180,7 +180,7 @@ p {
     position: absolute;
     top: -42px;
     left: 0;
-    width: 135px;
+    width: 134px;
     height: 4px;
   }
 
@@ -193,6 +193,12 @@ p {
   &.orange {
     &:before {
       background: $orange;
+    }
+  }
+
+  &.center {
+    &:before {
+      left: calc(50% - 67px);
     }
   }
 }

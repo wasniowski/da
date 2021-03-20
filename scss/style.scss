@@ -8,6 +8,7 @@
 
 @import "abooutme";
 @import "cooperation";
+@import "team";
 
 html {
   color: $text-color-dark;
@@ -53,6 +54,10 @@ ul {
       background: $dark;
     }
   }
+}
+
+a {
+  color: inherit;
 }
 
 #navigation {

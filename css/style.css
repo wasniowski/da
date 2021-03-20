@@ -690,7 +690,7 @@ p {
   position: absolute;
   top: -42px;
   left: 0;
-  width: 135px;
+  width: 134px;
   height: 4px;
 }
 .text-with-separator.turquoise:before {
@@ -698,6 +698,9 @@ p {
 }
 .text-with-separator.orange:before {
   background: #F9A01B;
+}
+.text-with-separator.center:before {
+  left: calc(50% - 67px);
 }
 
 .bx-wrapper {
@@ -937,7 +940,7 @@ p {
   position: absolute;
   top: -42px;
   left: 0;
-  width: 135px;
+  width: 134px;
   height: 4px;
 }
 .text-with-separator.turquoise:before {
@@ -945,6 +948,9 @@ p {
 }
 .text-with-separator.orange:before {
   background: #F9A01B;
+}
+.text-with-separator.center:before {
+  left: calc(50% - 67px);
 }
 
 .bx-wrapper {
@@ -1115,6 +1121,69 @@ p {
   margin-right: 50px;
 }
 
+#page-team .page-title {
+  background: #F8F5F2;
+  padding: 80px 0 140px 0;
+}
+#page-team .page-title .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 40px;
+}
+@media only screen and (min-width: 992px) {
+  #page-team .page-title .container {
+    grid-template-columns: 1fr 2fr;
+    max-width: 1120px;
+  }
+}
+#page-team .people {
+  background: #3F4242;
+  color: #fff;
+  padding: 80px 0;
+}
+#page-team .people .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 40px;
+}
+@media only screen and (min-width: 992px) {
+  #page-team .people .container {
+    margin-top: -140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1120px;
+  }
+}
+#page-team .people .container .item .image img {
+  width: 100%;
+  height: auto;
+}
+#page-team .people .container .item h2 {
+  text-align: center;
+  margin: 40px 60px 20px 60px;
+  font-family: "Abhaya Libre", serif;
+  font-size: 40px;
+  line-height: 40px;
+}
+#page-team .people .container .item p {
+  font-size: 12px;
+  line-height: 26px;
+  color: #c4c4c4;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+#page-team .hiring {
+  padding: 120px 0;
+}
+#page-team .hiring .container {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #page-team .hiring .container {
+    max-width: 960px;
+  }
+}
+
 html {
   color: #29302B;
   font-size: 1em;
@@ -1157,6 +1226,10 @@ ul li:before {
   height: 4px;
   border-radius: 4px;
   background: #3F4242;
+}
+
+a {
+  color: inherit;
 }
 
 #navigation {
