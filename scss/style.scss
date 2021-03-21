@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Open+Sans:wght@400;600;700&display=swap");
 
-@import "breakpoints";
-@import "normalize";
-@import "variables";
-@import "helpers";
-@import "page-helpers";
+@import "mixins/breakpoints";
+@import "common/normalize";
+@import "common/variables";
+@import "helpers/helpers";
+@import "helpers/page-helpers";
 
-@import "abooutme";
-@import "cooperation";
-@import "team";
+@import "page-abooutme";
+@import "page-cooperation";
+@import "page-team";
+@import "page-podcast";
 
 html {
   color: $text-color-dark;
