@@ -6,6 +6,9 @@
 
       // Enable Navigation
       navigation.init();
+
+      // Enable Masonry Gallery
+      masonryGrid.init();
     },
   };
 
@@ -14,19 +17,19 @@
    */
 
   var navigation = {
-    navSelector: '#navigation',
-    openNavSelector: 'button.open',
-    closeNavSelector: 'button.close',
+    navSelector: "#navigation",
+    openNavSelector: "button.open",
+    closeNavSelector: "button.close",
 
     init: function () {
       $(this.openNavSelector).click(() => {
-        $(this.navSelector).addClass('open');
-      })
+        $(this.navSelector).addClass("open");
+      });
       $(this.closeNavSelector).click(() => {
-        $(this.navSelector).removeClass('open');
-      })
-    }
-  }
+        $(this.navSelector).removeClass("open");
+      });
+    },
+  };
 
   /*
    * Enable Sliders
@@ -98,10 +101,7 @@
       var _self = this;
 
       if ($(window).width() < this.sliderBlogBreakpoint) {
-        if (
-            this.sliderBlog.length == 0 &&
-            $(this.sliderBlogSelector).length
-        ) {
+        if (this.sliderBlog.length == 0 && $(this.sliderBlogSelector).length) {
           var sliderBlogOptions = {
             pager: false,
             maxSlides: 4,
@@ -112,9 +112,7 @@
             slideMargin: 25,
           };
           $(this.sliderBlogSelector).each(function () {
-            _self.sliderBlog.push(
-                $(this).bxSlider(sliderBlogOptions)
-            );
+            _self.sliderBlog.push($(this).bxSlider(sliderBlogOptions));
           });
         }
       } else {
@@ -125,6 +123,18 @@
 
           this.sliderBlog = [];
         }
+      }
+    },
+  };
+
+  /*
+   * Masonry Grid
+   */
+
+  var masonryGrid = {
+    init: function () {
+      if($('.mansory-grid').length){
+        $('.masonry-grid').masonryGrid();
       }
     }
   };
