@@ -248,6 +248,18 @@
               padding-top: 0;
             }
           }
+
+          &.share {
+            display: flex;
+
+            li {
+              margin-left: 20px;
+
+              &:first-of-type {
+                margin-left: 0;
+              }
+            }
+          }
         }
       }
 
@@ -307,16 +319,6 @@
 
         &:before {
           display: none;
-        }
-      }
-
-      &.links li {
-        border-top: 1px solid $grey;
-        padding: 20px 0;
-
-        &:first-of-type {
-          border-top: 0;
-          padding-top: 0;
         }
       }
     }

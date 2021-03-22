@@ -1494,6 +1494,15 @@ p {
   border-top: 0;
   padding-top: 0;
 }
+#page-blog-article .article .content aside ul.share {
+  display: flex;
+}
+#page-blog-article .article .content aside ul.share li {
+  margin-left: 20px;
+}
+#page-blog-article .article .content aside ul.share li:first-of-type {
+  margin-left: 0;
+}
 #page-blog-article .article .content article {
   grid-area: article;
 }
@@ -1543,14 +1552,6 @@ p {
 }
 #page-blog-article .tags ul li:before {
   display: none;
-}
-#page-blog-article .tags ul.links li {
-  border-top: 1px solid #828282;
-  padding: 20px 0;
-}
-#page-blog-article .tags ul.links li:first-of-type {
-  border-top: 0;
-  padding-top: 0;
 }
 
 html {
