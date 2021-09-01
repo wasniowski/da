@@ -2,209 +2,58 @@
 
 .text-center {text-align: center}
 
-.main-title {
-  font-family: "Abhaya Libre", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 95%;
-  @include breakpoint(medium) {
-    font-size: 64px;
-  }
+.pre-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: -35px;
+  margin-left: -3px;
 }
 
 .title {
-  font-family: "Abhaya Libre", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 105%;
-  @include breakpoint(medium) {
-    font-size: 48px;
-  }
+  font-size: 88px;
+  line-height: 104px;
+  font-family: 'Krona One', sans-serif;
+  font-weight: 400;
+  margin-left: -9px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  margin: 0;
-  padding: 0;
+.title-small {
+  font-size: 64px;
+  line-height: 88px;
+  font-family: 'Krona One', sans-serif;
+  font-weight: 400;
+  margin-left: -5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.headline {
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 28px;
-}
-
-.lead {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.page-lead {
-  font-family: "Abhaya Libre", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
-}
-
-.dotted-link {
-  display: inline-block;
+.dot {
+  width: 170px;
+  height: 170px;
+  background: $color-orange;
+  color: $color-white;
   text-decoration: none;
-  color: $text-color-dark;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 
   span {
-    position: relative;
-    padding:0 22px;
-    font-size: 12px;
-    line-height: 44px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-
-    &:before {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 44px;
-      top: -13px;
-      left: calc(-100% + 44px);
-      right: auto;
-      background: $yellow;
-      border-radius: 50px;
-      z-index: -1;
-      transition: all 0.7s;
-    }
+    margin-top: 20px;
+    text-align: center;
   }
-
-  &:hover {
-    span:before {
-      width: 200%;
-    }
-  }
-
-  &.center {
-    span:before {
-      width: 44px;
-      left: 50%;
-      transform: translate(-50%);
-    }
-    &:hover {
-      span:before {
-        width: 100%;
-      }
-    }
-  }
-
-  &.green {
-    span:before {
-      background: $turquoise-btn;
-    }
-  }
-
-  &.dark-green {
-    span:before {
-      background: $turquoise-light;
-    }
+  img {
+    margin-top: 10px;
   }
 }
 
 .more {
-  color: $orange;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  position: relative;
-  z-index: 1;
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 16px;
-    top: 0;
-    right: -25px;
-    background: url("../images/arrow.svg") right center no-repeat;
-  }
-}
-
-.more-grey {
   display: inline-block;
-  color: $grey-light;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 37px;
-  margin-right: 20px;
-  position: relative;
-  z-index: 1;
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 16px;
-    top: 10px;
-    right: -25px;
-    background: url("../images/arrow-2.svg") right center no-repeat;
-  }
-}
-
-.text-with-separator {
-  position: relative;
-  margin-top: 84px;
-  @include breakpoint(small) {
-    margin-left: 60px;
-  }
-  @include breakpoint(medium) {
-    margin-left: 40px;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -42px;
-    left: 0;
-    width: 134px;
-    height: 4px;
-  }
-
-  &.turquoise {
-    &:before {
-      background: $turquoise-light;
-    }
-  }
-
-  &.orange {
-    &:before {
-      background: $orange;
-    }
-  }
-
-  &.center {
-    &:before {
-      left: calc(50% - 67px);
-    }
-  }
-}
-
-.bx-wrapper {
-  background: none;
-  border: 0;
-  box-shadow: none;
+  margin: 0 auto;
 }
